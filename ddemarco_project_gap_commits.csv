@@ -1,0 +1,517 @@
+pre/post;prj;commit;author;time;message
+pre;aidenlab_juicer;a12df405a0e16eaee432f3f2980bcecab91a0240;Jean Elbers <jean.elbers@gmail.com>;1651227170;"Update juicer.sh
+
+I had to remove ${!SLURM_JOB_ID} and replace with ${SLURM_JOB_ID} on Debian11?"
+pre;aidenlab_juicer;ca970f12a0371f8e126ca2814bd26cb771f6a1a4;Adam Diehl <agd27@cornell.edu>;1656515044;"Update juicer_postprocessing.sh
+
+Expose --threads option for Arrowhead"
+pre;aidenlab_juicer;53ac596537a7b9bbc1642d5c70a4de6fda684f82;Adam Diehl <agd27@cornell.edu>;1656529791;"Update juicer_postprocessing.sh
+
+move --threads flag to be directly after arrowhead command"
+pre;aidenlab_juicer;585735c01c9d49e4f52adac5295c6a1cb6c897da;Muhammad Saad Shamim <sa501428@gmail.com>;1656536483;"Merge pull request #282 from adadiehl/patch-1
+
+Update juicer_postprocessing.sh"
+pre;aidenlab_juicer;c5617970a436b4020b079d69a13d1a41eb3a1b08;Adma Diehl <adadiehl@umich.edu>;1657213558;"Provide default value to --threads
+"
+pre;aidenlab_juicer;5a471a43f895b6221f670db9befd7acd5d59c03d;Muhammad Saad Shamim <sa501428@gmail.com>;1657213711;"Merge pull request #286 from adadiehl/main
+
+Provide default value to --threads"
+pre;aidenlab_juicer;bb2287b0ddcf64de7905adeba54936b004f19f4f;nchernia <neva@broadinstitute.org>;1675268292;"Update README
+
+Add more links to ENCODE, make clear certain systems are no longer under active maintenance / development."
+pre;aidenlab_juicer;290e443dd06f737109e5d93b4f4ae3cadd94ddef;Muhammad Saad Shamim <sa501428@gmail.com>;1675391321;"Merge pull request #304 from aidenlab/nchernia-patch-1
+
+Update README"
+pre;aidenlab_juicer;fbd8c6f08e8ce95774db05daebb5ef507afa6af4;Jean Elbers <jean.elbers@gmail.com>;1675692939;"Merge a12df405a0e16eaee432f3f2980bcecab91a0240 into 290e443dd06f737109e5d93b4f4ae3cadd94ddef
+"
+pre;aidenlab_juicer;bfaac5184c2b64c3644c5e35bd1019499ca8b66f;Muhammad Saad Shamim <sa501428@gmail.com>;1675692952;"Merge f34dcc4eece4c6d458dbe3a8e4c8cce4846446a0 into 290e443dd06f737109e5d93b4f4ae3cadd94ddef
+"
+post;aidenlab_juicer;a91d70d3828e3885c868757dab2de7d823b20ce1;Emerson Jacobson <emwjacobson@gmail.com>;1707751779;Fixed queue time to use $queue_time
+post;aidenlab_juicer;6ae9c1cd5899042b39001882b28172cd194aaf1d;David Weisz <weisz@bcm.edu>;1724423720;"Add support to run Juicer2 and Juicebox in a Docker container using Kasm framework
+"
+post;aidenlab_juicer;85665e8cf993f89b6c1e641244ca55440c1c5d2d;David Weisz <weisz@bcm.edu>;1724426218;"Add comments for the demo script
+"
+post;aidenlab_juicer;b069976e570f4dec1d65e1900d6fa71ac76c4ee8;Emerson Jacobson <emwjacobson@gmail.com>;1726880953;"Merge a91d70d3828e3885c868757dab2de7d823b20ce1 into 85665e8cf993f89b6c1e641244ca55440c1c5d2d
+"
+post;aidenlab_juicer;384da11fa5e53944941dcc4b2b329ff04a894f24;mahajrod <mahajrod@gmail.com>;1729336672;"Added support for bwa-mem2 to the CPU version to speedup the alignment and simplify integration in pipelines already using bwa-mem2 as main alignment.
+Selection between bwa and bwa-mem2 depends on the presense of the index files: *.bwt.2bit.64 for bwa-mem2 and *.bwt for bwa.
+First the presence of the bwa-mem2 index is checked. If it is absent test for bwa index is done.
+"
+post;aidenlab_juicer;3826f2457c402b43ce1337f6a525f4f74997114e;Sergei Kliver <mahajrod@gmail.com>;1729339648;"Merge 384da11fa5e53944941dcc4b2b329ff04a894f24 into 85665e8cf993f89b6c1e641244ca55440c1c5d2d
+"
+post;aidenlab_juicer;ea215f8ee09cfe1a7b75d900edbb582bf2dde9e3;I-Hsuan Lin <9032946+ycl6@users.noreply.github.com>;1730221067;"Add a '--mem' flag to define memory per thread used during 'samtools sort'
+"
+post;aidenlab_juicer;c868fc2528c3f6b608f8b5f146612a99b2198ced;I-Hsuan Lin <9032946+ycl6@users.noreply.github.com>;1730236713;"Set memory usage using '-m' to 'samtools sort' in PBS and Slurm requests
+"
+post;aidenlab_juicer;02ef27cd3479a129dee8c189dc64ef10a6d4c4aa;David Weisz <weisz@bcm.edu>;1732257266;"Bug fix & more containerization support (GPU)
+"
+post;aidenlab_juicer;fa7d8a0df3bd15041e08e6fcf4e91610ddf6ea14;David Weisz <weisz@bcm.edu>;1732257501;"Update Readme and add missing install script
+"
+pre;f-fathurrahman_pwdft.jl;407c3ed20e866a6397fa613c2099a97c729d67e3;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744694462;"Draft timing_v2
+"
+pre;f-fathurrahman_pwdft.jl;fa823e3b0271dc41d9513068aeec2ef4a2618a13;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744698873;"Use LDA instead of PBE
+"
+pre;f-fathurrahman_pwdft.jl;077bd209291b3b1eecb0954cc73b339d3328baca;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744698898;"Should be easier to converge now
+"
+pre;f-fathurrahman_pwdft.jl;0fb3ef6b61a6e30fdfc355edf903d72181f00556;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744698935;"Avoid using local mTS
+"
+pre;f-fathurrahman_pwdft.jl;60a01e4eb1bb3e862a2bf1927e257f3d54949a28;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744699006;"Remove PBE from the name
+"
+pre;f-fathurrahman_pwdft.jl;0ad4ee608f9a1c0cb4a9b9eafbc99e7318d812fc;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744704358;"Clean up
+"
+pre;f-fathurrahman_pwdft.jl;8c5625fb6249a23c219a20340bbdda7e9ccc183e;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744716716;"Comment out info
+"
+pre;f-fathurrahman_pwdft.jl;4a1433946593ff687a46d96cad8553c42d87fb92;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744716737;"Some consolidation for electrons_scf
+"
+pre;f-fathurrahman_pwdft.jl;76c89889895ae80647f229e9a5279041c6691977;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744763608;"Draft for bench solvers
+"
+pre;f-fathurrahman_pwdft.jl;8830ee9b53ba91f594f38b8afea29efd6ab49856;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1744763624;"Update
+"
+post;f-fathurrahman_pwdft.jl;be515ecc76d924c3c890743095c89165ec13d931;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1754880967;"Fix my_pwx
+"
+post;f-fathurrahman_pwdft.jl;ddbceeb213197d29d3e257785fdc8648258c07a8;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1755082964;"Export electrons_scf_G!
+"
+post;f-fathurrahman_pwdft.jl;8443915bbfd4d897b74bedaae0253100c0d1f698;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1755092009;"Implement electrons_Emin_Haux, some functions with similar
+functionalities are also included. Needs to be fixed later.
+"
+post;f-fathurrahman_pwdft.jl;181c09912f9c92d2a4b7cf0c6dec3a4db3befff7;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1755162229;"Some comments
+"
+post;f-fathurrahman_pwdft.jl;4aa840a1258334db1bf65f80a85efa2f57a8b18b;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1755167900;"Remove timing_v2, will be added later (?)
+"
+post;f-fathurrahman_pwdft.jl;449a3068e6798d650baa290d87f60c85f9bd8d58;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1755169488;"Minor stuffs
+"
+post;f-fathurrahman_pwdft.jl;ff415a5e2a54a2ee0e908d81234f62ba293bbd93;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1755251142;"Some comment about calc_qradG
+"
+post;f-fathurrahman_pwdft.jl;2f8b2d98a6ece9fea9da6dc2a1ab09be89b73515;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1755357114;"Use qe_sph_bes instead of sphericalbesselj
+"
+post;f-fathurrahman_pwdft.jl;d5c8e812227727eef62a103df16dbde61739ae24;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1755357307;"Fix electrons_scf_G! calls
+"
+post;f-fathurrahman_pwdft.jl;039e5337065d9a4f2fca79c3ee286cec2750b5e3;Fadjar Fathurrahman <fadjar.fathurrahman@gmail.com>;1755530877;"Need to fix
+"
+pre;icrar_shark;eab0f0885465f121d347568ac30aad35a47e968f;Katy Proctor <21248939@student.uwa.edu.au>;1599966203;"Add sizes data and add bootstraped error + ICl contribution to plotting scripts
+"
+pre;icrar_shark;500d38be8a8573936f2c375fd0de77648e44d345;Claudia Lagos <claudia.lagos@icrar.org>;1601346864;"Using halo dynamical time and radius for tcool
+
+Before we were using the subhalo dynamical timescale and radius
+to cpmpute the cooling time. I have updated that to use the halo dynamical timescale
+and Rvir. This makes little difference to the results but it's more physical.
+"
+pre;icrar_shark;9c7e251d26207734927b9fc793b5cb861ef9a084;Claudia Lagos <claudia.lagos@icrar.org>;1601370164;"Tracking mean stellar mass contributing to IHSC
+
+- new property tracking the mass-weighted stellar mass of the galaxies
+that contribute to stellar halos.
+
+- Also fixed a problem in which type 1 subhalos could still have stellar
+halos if they just became type 1."
+pre;icrar_shark;dcd7172ad5c3a58f1273f95ac858daf54ae41f18;Rodrigo Tobar <rtobar@icrar.org>;1616739358;"Add new all_subhalos_view type
+
+The all_subhalos_view type is a container-like class (it offers both
+begin() and end() methods) that can be used to iterate over the subhalos
+of a halo, as well as to count how many subhalos there are contained in
+a halo. Iteration happens by visiting the central subhalo first, if any,
+and then the satellites. The implementation of this visitation pattern
+is implemented in the inner iterator class.
+
+This commit introduces the new type, but doesn't update the rest of the
+code to use it yet.
+
+Signed-off-by: Rodrigo Tobar <rtobar@icrar.org>
+"
+pre;icrar_shark;4d4df4403d354e1dfd74ec557a58253bca79aeae;Rodrigo Tobar <rtobar@icrar.org>;1616739673;"Move make_subhalo utility method for later reuse
+
+We are planning to reuse this method from a class different than the one
+where it was initially defined, and turning it into a free function will
+give us that reusability.
+
+Signed-off-by: Rodrigo Tobar <rtobar@icrar.org>
+"
+pre;icrar_shark;d5455216ee1ec0e54801983cd7c47263487458bb;Rodrigo Tobar <rtobar@icrar.org>;1616739766;"Catch exception by const reference
+
+This avoids a warning given by newer compilers if exceptions are caught
+by value.
+
+Signed-off-by: Rodrigo Tobar <rtobar@icrar.org>
+"
+pre;icrar_shark;f89616bbbdf786d00a2ce2e6c2d2ce139028d8ce;Rodrigo Tobar <rtobar@icrar.org>;1616739899;"Reimplement all_subhalos using all_subhalos_view
+
+The change was almost transparent, with some exceptions which I describe
+below.
+
+First, the code defining the central subhalo for each Halo was relying
+on the first element of all_subhalos() being the most massive, which
+isn't the case anymore. We do this explicitly now for this specific
+case. This same code was also relying on all_subhalos() returning new
+SubhaloPtr objects, so it could safely remove the satellite subhalo from
+the underlying Halo::satellite_subhalos vector and still keep using it.
+This isn't the case now either: the all_subhalos_view object returns
+direct references to the underlying vector, so once a satellite is
+removed from the vector the SubhaloPtr isn't valid anymore (most of the
+times, unless someone else is pointing to it). The solution is obviously
+to make a copy on this case.
+
+The other exception was the code performing the linking between
+snapshots, which removes subhalos *while iterating over them*. This
+worked before because we always returned a new vector, and therefore
+removing subhalos from the Halo had no effect on the iteration over the
+vector. We explicitly create a new vector for this iteration now, which
+then makes the code happy.
+
+A set of unit tests also demonstrates the new functionality is working
+as intended in all the possible use cases.
+
+Signed-off-by: Rodrigo Tobar <rtobar@icrar.org>
+"
+pre;icrar_shark;30f3f03bab67c03114ca0ea441500e81ff42ba7f;Rodrigo Tobar <rtobar@icrar.org>;1616741322;"Add missing property in galaxies.hdf5 docs
+
+Signed-off-by: Rodrigo Tobar <rtobar@icrar.org>
+"
+pre;icrar_shark;8b6f860e51857cd65bc06872a3e3060f1a2f48c5;Rodrigo Tobar <rtobar@icrar.org>;1616744693;"Use [()] to access all data from a Dataset
+
+For a while h5py has warned us that accessing all values from a Dataset
+should be done via [()] rather than reading the .value attribute. This
+warning was finally removed in hy5py 3 and replaced with a breaking
+change, so it's time for us to adjust.
+
+Signed-off-by: Rodrigo Tobar <rtobar@icrar.org>
+"
+pre;icrar_shark;dbd99421b513ba8a690a29530f5a8fc5687bd4c3;Rodrigo Tobar <rtobar@icrar.org>;1616747718;"Avoid matplotlib 3.4, it has a bug with errorbars
+
+Version 3.4 was release just a couple of hours ago, so I hit this
+problem just by chance -- and reported it upstream of course, more
+details in https://github.com/matplotlib/matplotlib/issues/19776.
+
+Signed-off-by: Rodrigo Tobar <rtobar@icrar.org>
+"
+post;icrar_shark;a25d6599d97b30c986862704a5ef399353468787;Claudia Lagos <claudia.lagos@icrar.org>;1633700302;"Updating python plots
+
+small changes in python scripts for plotting.
+"
+post;icrar_shark;f47562fdf58a494c833a3a55d58d32d323f7d18e;Claudia Lagos <claudia.lagos@icrar.org>;1633700352;"Merge remote-tracking branch 'origin/devel' into devel
+"
+post;icrar_shark;1acd0ee877198f4388d9d840e8d427d2b19088bc;Claudia Lagos <claudia.lagos@icrar.org>;1634523762;"Adding analysis scripts for high-z studies
+
+Adding various scripts to study galaxies at high redshift.
+
+- clusters_z6_study.py used for ESO proposal led by Anshu Gupta
+- smf_jwst_outthere.py used for JWST proposal led by Karl Glazebrook
+"
+post;icrar_shark;346480ff2a34723ee84169d0580894c71bc5a305;Claudia Lagos <claudia.lagos@icrar.org>;1635481929;"Changing the order of reincorporation and accretion in cooling
+
+I've change the order so that reincorporation happens first, followed by
+cooling of pristine gas."
+post;icrar_shark;28b0906c193ca51d0fed3a122e21d5bce1256fb2;Claudia Lagos <claudia.lagos@icrar.org>;1641892666;"Limiting halo gas to universal baryon fraction
+
+Testing limiting the reincorporated mass and pritine accretion to keep
+the halo baryon fraction equal or below the universal baryon fraction.
+This is checked as total baryon (including ejected and lost baryons), as
+well as baryons inside halos (excluding ejected and lost baryons).
+
+Another important change is the way we ensure mass growth in the trees.
+The way it was done before didn't consider the many progenitors a halo
+can have. I corrected that and now it's consistent."
+post;icrar_shark;078ba18b6bbaf3d8434d9fb6587529d064306bef;Claudia Lagos <claudia.lagos@icrar.org>;1642403442;"Changes to environment and AGN quenching
+
+- In environment we are assuming that the ejected gas reservoir of
+galaxies is lost once the halo becomes a subhalo (when galaxies become
+satellites). This us supported by the work of Ruby Wright in EAGLE.
+
+- In gas_cooling: Bravo19 model should also adopt the assumption of Croton16
+that rheat can only increase.
+"
+post;icrar_shark;8cc5375e2a01a13976c30d19999ddd23b750893a;Rodrigo Tobar <rtobar@icrar.org>;1642475947;"Remove unused variable
+
+This variable was previously used, but a change in 28b0906 made it
+obsolete.
+
+Signed-off-by: Rodrigo Tobar <rtobar@icrar.org>
+"
+post;icrar_shark;90478d1ea77ddfea589b9116fae7dbea3b94f53d;Claudia Lagos <claudia.lagos@icrar.org>;1642477976;"Avoiding nan in stellar age calculation
+
+Tracking of stellar age and total mass formed has been taken out of the
+if statement in evolve_halos, and before calculating the age we check if
+the total stellar mass formed is >0.
+"
+post;icrar_shark;7131d7722c08c57ff52146c31ad8ee85b5412f24;Claudia Lagos <claudia.lagos@icrar.org>;1642478289;"Merge remote-tracking branch 'refs/remotes/origin/devel' into devel
+"
+post;icrar_shark;6c87005d91790c70192cb3da1f273300e735c16f;Claudia Lagos <claudia.lagos@icrar.org>;1642489594;"Small change on accr rate in hot halo mode Croto16
+"
+pre;mathlab_pydmd;70685d5077ab653941c8cbca4c838f6fc11d4c98;Nicola Demo <demo.nicola@gmail.com>;1539180156;"Fix cast bug, remove warnings
+"
+pre;mathlab_pydmd;b688b4c8d8b20fbdd77b36eb2bd72d2f6d8adde8;Marco Tezzele <mtezzele@users.noreply.github.com>;1539270278;"Merge pull request #77 from ndem0/fix
+
+Fix cast bug, remove warnings"
+pre;mathlab_pydmd;cb52961f2ff1eda24bbfdecbf94320d76d8a00dd;Marco Tezzele <marcotez@gmail.com>;1539522846;"add missing params in dmdbase doc
+"
+pre;mathlab_pydmd;6f46671ad77dd29d48016db7e9c000a82b9a9bac;Marco Tezzele <mtezzele@users.noreply.github.com>;1539523399;"Merge pull request #78 from mtezzele/doc
+
+add missing params in dmdbase doc"
+pre;mathlab_pydmd;076ddf014814aef878db07d3b86efdb1813f006b;Marco Tezzele <marcotez@gmail.com>;1541497231;"new work
+"
+pre;mathlab_pydmd;6b2e25f973e7a44995ccca20ed1702e28bf35c4e;Marco Tezzele <mtezzele@users.noreply.github.com>;1541497877;"Merge pull request #79 from mtezzele/readme
+
+new work"
+pre;mathlab_pydmd;40179ebc1507a5a9f607101da225c6aa78ffb1ab;Nicola Demo <demo.nicola@gmail.com>;1542885592;"new version
+"
+pre;mathlab_pydmd;8bd6ec65cab40c33a40e3316459275af7db5dded;Marco Tezzele <marcotez@gmail.com>;1544706725;"faster implementation for computing optimal amplitudes, improved doc
+"
+pre;mathlab_pydmd;61180260c81b749ab8209059f83e617993ff95cc;Marco Tezzele <marcotez@gmail.com>;1544706947;"codeformatter
+"
+pre;mathlab_pydmd;b233cf3f1ae1d756af20538b79cdac13c3e253c3;Nicola Demo <demo.nicola@gmail.com>;1544725035;"Merge pull request #80 from mtezzele/spdmd
+
+Better doc on optimal amplitudes and faster implementation"
+post;mathlab_pydmd;323b318e6bce9a36b8fd2607acf3a1a8c3e12976;Vahid S. Bokharaie <vsb1357@users.noreply.github.com>;1553005985;Add files via upload
+post;mathlab_pydmd;35450589adfc0280902bfc071122c8f457483044;Vahid S. Bokharaie <vsb1357@users.noreply.github.com>;1553006016;Add files via upload
+post;mathlab_pydmd;5919243541b3b74983e0876fe6a4caf28266daa3;Vahid S. Bokharaie <vsb1357@users.noreply.github.com>;1553006401;"Merge 35450589adfc0280902bfc071122c8f457483044 into b233cf3f1ae1d756af20538b79cdac13c3e253c3
+"
+post;mathlab_pydmd;a2a0b8287ce4ecd839ddcc03877655181dd1115f;Unknown <loiseau.jc@gmail.com>;1555087182;"Rough implementation of the optimal closed-form DMD solution
+
+- Basic skeleton for the implementation of the closed-form DMD solution.
+- Added a quick tutorial to test a few things."
+post;mathlab_pydmd;2f40c735c8d2a5818e5002afce5bc1f45238c71d;Unknown <loiseau.jc@gmail.com>;1555253776;"Improved the implementation.
+
+- Finished the SVD-factorization of the DMD operator.
+- More PyDMD-compliant implementation.
+- Added a predict function following the sklearn API."
+post;mathlab_pydmd;23564ec45640b2198c28102b55e9580c92aabfac;Unknown <loiseau.jc@gmail.com>;1555253872;"Added Tutorial 8 (Rough sketch)
+
+- Added a tutorial comparing the performances of the various DMD implementations."
+post;mathlab_pydmd;aac2b9eea830e23d2731ff98cf448d2b39c4d634;Unknown <loiseau.jc@gmail.com>;1555423100;"Added `predict` to DMD.
+
+- Added a `predict` function to the DMD estimator."
+post;mathlab_pydmd;99742bfbf6abddaf4cbe5f4178fadd5168a22abc;Unknown <loiseau.jc@gmail.com>;1555503708;"Clean-ish implementation of the algorithm by Héas & Herzet
+
+- The optDMD object is now more compliant with the structure of PyDMD.
+- Still need to implement some sanity checks."
+post;mathlab_pydmd;e0c33d7829389102a6e4fb83391dd0a7bf29d79b;Unknown <loiseau.jc@gmail.com>;1555598360;"Store the singular value of the low-dimensional DMD operator into self._svds.
+
+"
+post;mathlab_pydmd;c47d76dca1e0737aa9401822488dfc4d4551fcf7;Unknown <loiseau.jc@gmail.com>;1555598521;"Started to add a new tutorial comparing the various DMD implementations.
+
+"
+pre;nenadmarkus_wlrn;b67f10057878c3d824a4574f35d820802891c6b5;Nenad Markus <nenad.markus@fer.hr>;1504168432;"torch.nn.DataParallel
+"
+pre;nenadmarkus_wlrn;c76a2ff400bfa174b923647033162b8724ecc28c;Nenad Markus <nenad.markus@fer.hr>;1504180688;"hard-negative mining in pytorch
+"
+pre;nenadmarkus_wlrn;edabf876565a6cafd77ba64c87771b7883a22a17;Nenad Markus <nenad.markus@fer.hr>;1504181708;"...
+"
+pre;nenadmarkus_wlrn;4c72f9c8bb968c4d067769e3b8f433f35cd04d6b;nenad <nenad.markus@fer.hr>;1521545879;"update: Torch7 implementation removed, data-loading process simplified
+"
+pre;nenadmarkus_wlrn;f03e4338d8d9124b2e31065929ea21e9e6865df1;nenad <nenad.markus@fer.hr>;1525078055;"more hn bags, more keypoints
+"
+pre;nenadmarkus_wlrn;fbdc13ba894802350e247aa03bf02d0839b32611;doma zabok <neno.markus@gmail.com>;1525524281;"new pretrained models
+"
+pre;nenadmarkus_wlrn;336a97c3c16610c1b6efa5d85c225d8d83c7b62a;doma zabok <neno.markus@gmail.com>;1525525886;"moving to pytorch 0.4
+"
+pre;nenadmarkus_wlrn;ab4392d4eb87c25c349d2d6ffb514bee2860f8f0;doma zabok <neno.markus@gmail.com>;1525528250;"...
+"
+pre;nenadmarkus_wlrn;3bd92a45214c58a30292e1577700f55ed1f9b026;Nenad Markus <nmarkus@Nenads-MacBook-Pro.local>;1557309271;"update
+"
+pre;nenadmarkus_wlrn;5369816f68f23ba47ed0482ea3de95b27635339b;Nenad Markus <nmarkus@Nenads-MacBook-Pro.local>;1557309324;"fix
+"
+post;nenadmarkus_wlrn;7fc0be29088ea94e1ede12a5b6e6fb52998572a3;nenad <nenad.markus@protonmail.com>;1652948424;"add old code based on an idea from 2017
+"
+post;nenadmarkus_wlrn;7efe2de019bb98bd031fb9e9dad43038c1649837;nenad <nenad.markus@protonmail.com>;1652950160;"add kitti2015 loader
+"
+post;nenadmarkus_wlrn;0cb67046b32b1ce6f8c95291a09abe715802f74a;nenad <nenad.markus@protonmail.com>;1652951586;"rm old pytorch stuff
+"
+post;nenadmarkus_wlrn;2599706a7d30f418a998faad83024009b4ce792b;nenad <nenad.markus@protonmail.com>;1652951837;"rm old pytorch stuff
+"
+post;nenadmarkus_wlrn;826f857ed6822e3be4466fa0225193c19f4574e7;nenad <nenad.markus@protonmail.com>;1652952362;"skip some images in kitti2015
+"
+post;nenadmarkus_wlrn;1c86d9c37a1c867b10d2bddb9cab1252719d5db5;nenad <nenad.markus@protonmail.com>;1652952835;"print dataset size, fix commenting
+"
+post;nenadmarkus_wlrn;43593065ccb608dae589d0d0b0da7ab99b36b0a6;nenad <nenad.markus@protonmail.com>;1652953178;"comments on image exclusion logic
+"
+post;nenadmarkus_wlrn;733f2d2c6d76bf03a399563c073ce8175db9a5df;nenad <nenad.markus@protonmail.com>;1652958478;"comments on image exclusion logic
+"
+post;nenadmarkus_wlrn;e3058065d3beb9bf4b8bd530f0480042d50491d4;nenad <nenad.markus@protonmail.com>;1653303453;"train path for
+"
+post;nenadmarkus_wlrn;aea2b34390ebc2bc18486de4e57cea677eb4f092;nenad <nenad.markus@protonmail.com>;1653304669;"fix
+"
+pre;nuest_o2r-project.github.io;1beff8386f1fd86efb53427036d2cc754f81754c;EftyK <efty.koukouraki@gmail.com>;1695042123;"Remove e-mail address o2r.team@uni-muenster.de
+"
+pre;nuest_o2r-project.github.io;a6ff435331bf25895af11e7eb6ecbe799957cdfe;EftyK <efty.koukouraki@gmail.com>;1695053120;"Add recent publication for GIScience conference.
+"
+pre;nuest_o2r-project.github.io;ad08e2afac7cc6646ac5ecc8e699f5dc87ced9a4;EftyK <efty.koukouraki@gmail.com>;1695055864;"Post about the new papers and the survey.
+"
+pre;nuest_o2r-project.github.io;6ce31613ec70031a8ffc5fd89adf431ea4210dff;Eftychia Koukouraki <efty.koukouraki@gmail.com>;1695056330;"Merge pull request #95 from EftyK/master
+
+Updates about the current status of O2R and September 23 news"
+pre;nuest_o2r-project.github.io;40ab41dc3c92391c072beacddc606b126bc6c914;Eftychia Koukouraki <efty.koukouraki@gmail.com>;1695056879;Update deposit.yml
+pre;nuest_o2r-project.github.io;64d11ff785d6c493f1cce746c7ecdf0f6e590a29;Eftychia Koukouraki <efty.koukouraki@gmail.com>;1695057036;Update deposit.yml
+pre;nuest_o2r-project.github.io;0682726e79624afe4721d665bd5f11f21f187176;Eftychia Koukouraki <efty.koukouraki@gmail.com>;1695057361;Update deposit.yml
+pre;nuest_o2r-project.github.io;9ade4557d89f9e17957edd06de036412e382e054;Eftychia Koukouraki <efty.koukouraki@gmail.com>;1695057610;Update deposit.yml
+pre;nuest_o2r-project.github.io;0cf367276bb6999be0198b8af265d98f88e9f3a1;Eftychia Koukouraki <efty.koukouraki@gmail.com>;1695057772;Update deposit.yml
+pre;nuest_o2r-project.github.io;a5f12a12096b473b3bfb1d18a32ea9b0c016ee9e;Eftychia Koukouraki <efty.koukouraki@gmail.com>;1695066054;Update deposit.yml
+post;nuest_o2r-project.github.io;041fc40b61b82779843acaa27480a57c2e14c05a;Daniel Nüst <daniel.nuest@tu-dresden.de>;1745406312;"add support for TOC on pages
+"
+post;nuest_o2r-project.github.io;328ddef53edac146bb30106bb77216570da6e348;Daniel Nüst <daniel.nuest@tu-dresden.de>;1745406340;"add content about R2S2 from various disappeared sources
+"
+post;nuest_o2r-project.github.io;9a33cbfe76cf402f211481603bab377a0f08dfdd;Daniel Nüst <daniel.nuest@wwu.de>;1745406495;"Merge pull request #97 from nuest/master
+
+"
+pre;qiboteam_qibojit;ab07e2f5656993d076e18bfc317eec4416d2b97c;Stefano Carrazza <scarrazza@users.noreply.github.com>;1750321804;"Merge pull request #225 from qiboteam/security_updates
+
+Bump `ipython` version"
+pre;qiboteam_qibojit;fe46100303e98b943f64dd42b7dff2231430f426;Renato Mello <renato.msf@gmail.com>;1750323522;"Merge branch 'main' into set_precision
+"
+pre;qiboteam_qibojit;714b283377c70f9bb47630e7c7ba21041f685106;Renato Mello <renato.msf@gmail.com>;1750323568;"update toml
+"
+pre;qiboteam_qibojit;21ce8813ae641a022807e8c6eadf70ccab918982;Renato Mello <renato.msf@gmail.com>;1750323660;"Merge branch 'main' into qinfo_jit
+"
+pre;qiboteam_qibojit;6ac242d61c323953e143798421ae79b0b5c09a41;Renato Mello <renato.msf@gmail.com>;1750323828;"new lock
+"
+pre;qiboteam_qibojit;25251be45d9e9a4bf7f811e8cdee90d8407855a0;Stefano Carrazza <scarrazza@users.noreply.github.com>;1750336128;"Merge pull request #219 from qiboteam/set_precision
+
+Allowing circuit execution using `float32` and `float64` dtypes"
+pre;qiboteam_qibojit;7f936b7198b6f7da81eec39b4969a405b980031b;Stefano Carrazza <stefano.carrazza@gmail.com>;1750418665;"updating dpes
+"
+pre;qiboteam_qibojit;95d26e7da1565a5abc1fc4ee2e669ab566265099;Stefano Carrazza <scarrazza@users.noreply.github.com>;1750421975;Update pyproject.toml
+pre;qiboteam_qibojit;bd3a0576a51792452a45f9892c874a9db93967f7;BrunoLiegiBastonLiegi <andreapapaluca@gmail.com>;1750692256;"feat: drafting unpack step
+"
+pre;qiboteam_qibojit;8cc4350be29ef0c4b05db5ff5d25cbde446b79ba;BrunoLiegiBastonLiegi <andreapapaluca@gmail.com>;1750776600;"fix: fixed numba
+"
+post;qiboteam_qibojit;48e8b6b520df854c0b717acdd73f800f591da47b;Renato Mello <renato.msf@gmail.com>;1754315885;"add fanout case
+"
+post;qiboteam_qibojit;6e8ea0abced49a8e3db338acc953d6d23c3ea900;Renato Mello <renato.msf@gmail.com>;1754316238;"update qibo branch
+"
+post;qiboteam_qibojit;c3c00877127a0ccaefe45610f822a8664bf93e4f;pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>;1754316364;"[pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+"
+post;qiboteam_qibojit;0f42842b2b416ad5e7d3d7d228acc058747c3adf;Renato Mello <renato.msf@gmail.com>;1754372919;"reshufle new lines
+"
+post;qiboteam_qibojit;c54f60d17341b352eb369e8b773f1fb10c07f172;Renato Mello <renato.msf@gmail.com>;1754373482;"remove comments
+"
+post;qiboteam_qibojit;c7869a9230c2fc74582dee4536d34a1aa09b3ddc;Renato Mello <renato.msf@gmail.com>;1754374481;"refactor `calculate_matrix_exp` for GPUs
+"
+post;qiboteam_qibojit;4c56355705ee1a878817df11ea32ef7f8e8c8f53;Renato Mello <renato.msf@gmail.com>;1754374504;"fix test
+"
+post;qiboteam_qibojit;ee9a81645f7ab7a732e0c44d1e8d73dfc78de617;Renato Mello <renato.msf@gmail.com>;1754375045;"refactor code
+"
+post;qiboteam_qibojit;a51cda23022f9caf38b8ba841888387cf6d233e4;pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>;1754375212;"[pre-commit.ci] auto fixes from pre-commit.com hooks
+
+for more information, see https://pre-commit.ci
+"
+post;qiboteam_qibojit;8444c3e519a0024d23920f90078af9abb3b15602;Renato Mello <renato.msf@gmail.com>;1754386111;"update `qibo` dependency
+"
+pre;rednaga_apkid;3155f68071851943b22ed24458281be9f59784b4;Eduardo Novella <enovella@nowsecure.com>;1618498862;"Add ApkEncryptor packer & closes #204
+"
+pre;rednaga_apkid;ac232344f7406d1c0e9d8bbbf47e0328c9e5751c;Eduardo Novella <enovella@nowsecure.com>;1618570815;"Remove comments
+"
+pre;rednaga_apkid;cd1dc225340af9ed74b7ec630c956d838af6542b;Eduardo Novella <enovella@nowsecure.com>;1625659162;"Tweak Promon Shield detection. Fix #267
+"
+pre;rednaga_apkid;b339fa519766f711220b8662c7da3672e9ddb9ac;Eduardo Novella <foro.dudu@gmail.com>;1628130602;"Add ApkEncryptor packer & closes #204 (#261)
+
+Add ApkEncryptor packer, fixes #204 "
+pre;rednaga_apkid;fbec06d15b0232f12bf9a8ec937c9b1bfd87b528;Eduardo Novella <foro.dudu@gmail.com>;1628131174;"Add rule for APKProtect (#257)
+
+"
+pre;rednaga_apkid;86f63fc6e87ca9d9a9cad30b2cf3fa1aa511f4fb;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1628132024;Update packers.yara
+pre;rednaga_apkid;e8530c5011ccaa6ac5af8005600975495cde1f6c;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1628133068;Update packers.yara
+pre;rednaga_apkid;b78d8d88818bc80b64d4c7a1398d80ef9aa7c803;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1628133071;"Merge e8530c5011ccaa6ac5af8005600975495cde1f6c into fbec06d15b0232f12bf9a8ec937c9b1bfd87b528
+"
+pre;rednaga_apkid;974b3306b32d9f76152f30e4a5cb2b3e363114b6;Eduardo Novella <foro.dudu@gmail.com>;1628435804;"Merge db451588f8bdb7d4cdfd1dfc52cb9ee0a54e0771 into fbec06d15b0232f12bf9a8ec937c9b1bfd87b528
+"
+pre;rednaga_apkid;cc102155cc22c50c72de619b070a408a2a79616a;Packmad <simone.aonzo@gmail.com>;1628435804;"Merge d1d03fd82d5b37a55686065a78f20404322b4a75 into fbec06d15b0232f12bf9a8ec937c9b1bfd87b528
+"
+post;rednaga_apkid;e452286a96cb7a6999002e20cb568a6d0101be64;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831154;Update common.yara
+post;rednaga_apkid;e23438e52b5010e2bc67c8ea77c4ed748bc828e8;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831198;Update obfuscators.yara
+post;rednaga_apkid;9ee68306b93ec403f6d8c362120cfdbd349e0402;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831238;Update packers.yara
+post;rednaga_apkid;5c1874a33b83f5ce3872cb1370323ba6d5464acb;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831285;Update protectors.yara
+post;rednaga_apkid;20cbdb215732cfc6009fb49fe525f00394c15823;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831317;Update abnormal.yara
+post;rednaga_apkid;a5e4303a3fbab24e809cedd09342dc315e7a2fa2;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831347;Update anti-vm.yara
+post;rednaga_apkid;963dc433834a3c877781fa8a16db9ed87f04645b;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831383;Update common.yara
+post;rednaga_apkid;4e78668be3ad5955e5e6944f74bf6ffbe7ae3587;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831421;Update compilers.yara
+post;rednaga_apkid;a1e8343156ea3a50606bc9806b7865920c7ff3ba;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831479;Update obfuscators.yara
+post;rednaga_apkid;cb3d9cb327cbdfbc7d6f02e8fb8985d484a3af90;Apkunpacker <27184655+apkunpacker@users.noreply.github.com>;1640831512;Update packers.yara
+pre;sebwouters_chemps2;4a6579a77979a8ae1b82e921d3bdc97dd175f386;Sebastian Wouters <sebastianwouters@gmail.com>;1540835657;"Release v1.8.9 LTS
+
+Bug fix long double literal in CheMPS2/Wigner.cpp
+"
+pre;sebwouters_chemps2;d8ac508d87517d5b47f1961438c5681d96b89760;Sebastian Wouters <sebastianwouters@gmail.com>;1543663678;"Additional example
+"
+pre;sebwouters_chemps2;a72858ada3c48edcfc236f9a04e992f01cc061e9;Sebastian Wouters <sebastianwouters@gmail.com>;1612170862;"Allow building with HDF5 1.10 and 1.12
+
+Fixes #79
+"
+pre;sebwouters_chemps2;2ab565b8d8eb92ba1a7b5b90d144dd9f922c47ca;Sebastian Wouters <sebastianwouters@gmail.com>;1612175687;"Travis without further specs
+"
+pre;sebwouters_chemps2;db5a2ed4a8225c7b26a229ecf4160d0a3a4f64ab;Sebastian Wouters <sebastianwouters@gmail.com>;1612185996;"Fix travis clang build
+
+https://github.com/travis-ci/travis-ci/issues/8613
+"
+pre;sebwouters_chemps2;aaacf2846191c9b31bfad8952dd2352c0b8f51d7;Sebastian Wouters <sebastianwouters@gmail.com>;1612206620;"Fix travis CI builds
+"
+pre;sebwouters_chemps2;fdfb63445772bc664ddef2d1d59344503f4566b4;Sebastian Wouters <sebastianwouters@gmail.com>;1641743480;"Don't require exact HDF5 version in CheMPS2Config.cmake
+"
+pre;sebwouters_chemps2;da1e64e0c934227dbbba19a8bfbb9e15693e8a1c;Sebastian Wouters <sebastianwouters@gmail.com>;1646860569;"Avoid libquadmath. Max error {j1, j2, j3, j4, j5, j6} with ji <= 95 is
+2.37707e-12.
+"
+pre;sebwouters_chemps2;a85c4d7dcc9ca5bca26e5b8788d1f4f0e5ada49f;Sebastian Wouters <sebastianwouters@gmail.com>;1646899231;"Update wigner6j double <-> long double comparison
+"
+pre;sebwouters_chemps2;38a301622ae5dea5d7bbc0a8394d80bdc109042c;Sebastian Wouters <sebastianwouters@gmail.com>;1646899368;"Format list
+"
+post;sebwouters_chemps2;ededf9a9774a057fc95f386e9430a6479706ee83;Cristian Le <git@lecris.dev>;1747327140;"Bump the CMake policies
+"
+post;sebwouters_chemps2;b8e899c9b922c7e276d4f0ba24c3cefec11d7634;Sebastian Wouters <sebastianwouters@gmail.com>;1747382782;"Merge pull request #85 from LecrisUT/cmake/4.0
+
+Bump the CMake policies"
+post;sebwouters_chemps2;92d241296192bac7d1e7a0e184e1ffa7dbfaf97f;Eisuke Kawashima <e-kwsm@users.noreply.github.com>;1752231878;"build: link against MPI if enabled
+
+resolve #87
+"
+post;sebwouters_chemps2;3add964f22a84f2ef2c17c7540a68e46a723849e;Sebastian Wouters <sebastianwouters@gmail.com>;1752242435;"Improved setting of inter parts optimization
+"
+post;sebwouters_chemps2;7e0c69a41ab337ac1115d992776fdb421a1cb65b;Sebastian Wouters <sebastianwouters@gmail.com>;1752243200;"ENABLE_IPO and CheckIPOSupported
+
+"
+post;sebwouters_chemps2;77a5d83e29b022acd3dcff6b3468dcbe2fb07f28;Sebastian Wouters <sebastianwouters@gmail.com>;1752244842;"Fix MPI build + fix test1 with MPI...
+"
+post;sebwouters_chemps2;3e1814b74753f47958dbd93e1f776a247f626e6a;Sebastian Wouters <sebastianwouters@gmail.com>;1752245736;"Fix MPI build and test1 with MPI
+
+"
+post;sebwouters_chemps2;55a6d761f8e98e9d147ec7d5b19351b41ea70271;Sebastian Wouters <sebastianwouters@gmail.com>;1752605614;"Merge pull request #90 from e-kwsm/MPI
+
+build: link against MPI if enabled"
+pre;yixuan_spectra;30b9def8bbc528b55c4abfccb7c87dc5ff7d3a93;Yixuan Qiu <yixuan.qiu@cos.name>;1491179783;"Doxygen documentation update
+"
+pre;yixuan_spectra;4b5dbdd5ddcc805f236529c5341d5ffc7412c228;Yixuan Qiu <yixuan.qiu@cos.name>;1491180509;"new domain name
+"
+pre;yixuan_spectra;9c8854a5eebf6ec1ec7b9d9eda66887ea3a29a83;Yixuan Qiu <yixuan.qiu@cos.name>;1491180738;"update links
+"
+pre;yixuan_spectra;92185e8f39ae01f7620d61a3ae778e0d73830fc5;Yixuan Qiu <yixuan.qiu@cos.name>;1491181031;"update links
+"
+pre;yixuan_spectra;3cf8fd46060b06d7a6ca27fb763975831c56da26;Yixuan Qiu <yixuan.qiu@cos.name>;1491184894;"Gemfile
+"
+pre;yixuan_spectra;91755fd16cd81177389fc250f099425b77b78037;Yixuan Qiu <yixuan.qiu@cos.name>;1491185101;"add gem source
+"
+pre;yixuan_spectra;bb5eab542a1211219675fc5de5e2d60373f43a72;Yixuan Qiu <yixuan.qiu@cos.name>;1491224653;"HTTPS links
+"
+pre;yixuan_spectra;556cdf8a9a98857837b16e2e8d3fd4740f468def;Yixuan Qiu <yixuan.qiu@cos.name>;1491224994;"HTTPS links
+"
+pre;yixuan_spectra;a55f40bc160b9609270324298329572cdabcdf5f;Luca Formaggia <lformaggia@users.noreply.github.com>;1491451679;"Merge d774a93a61e294e657dc7000f535a24e2de284b8 into 556cdf8a9a98857837b16e2e8d3fd4740f468def
+"
+pre;yixuan_spectra;5165052a49110a82a6ca983311eb19a9aad30b13;Yixuan Qiu <yixuan.qiu@cos.name>;1496508733;"element accessor
+"
+post;yixuan_spectra;ce497fdee13bb0b6b250f0e8d0a6ce9c07d7ab7c;Maxim Torgonsky <kriolog@gmail.com>;1514569151;"Add missing include which breaks compilation.
+"
+post;yixuan_spectra;d846bafa960c52546f686e92908cd4f8ca86d3f0;Angelos Mantzaflaris <Angelos.Mantzaflaris@oeaw.ac.at>;1518733556;"take Vector declaration outside loops, change return types to reference
+"
+post;yixuan_spectra;4cdf8758ee0e2149b917d7d298e3abcdd8b0d56d;Angelos Mantzaflaris <Angelos.Mantzaflaris@oeaw.ac.at>;1518777061;"preallocate Vf vector
+"
+post;yixuan_spectra;58b402c0da47c3f774cfc4f635dfe99a7f44fdff;Angelos Mantzaflaris <Angelos.Mantzaflaris@oeaw.ac.at>;1518781409;"preallocate Vf vector for SymEigsSolver as well
+"
+post;yixuan_spectra;6357033dc8a1f9c59f7c585d7c408c587034f786;Yixuan Qiu <yixuan.qiu@cos.name>;1519228164;"Merge pull request #38 from kriolog/add_missing_include
+
+Add missing include which breaks compilation."
+post;yixuan_spectra;ac08830edac8140b1a65843fc5ee35053fff6d87;Yixuan Qiu <yixuanq@gmail.com>;1519229072;"Merge branch 'master' of https://github.com/filiatra/spectra into develop
+"
+post;yixuan_spectra;d9c03cee83671f21417299002f15f973335bb823;Yixuan Qiu <yixuanq@gmail.com>;1519229825;"tiny formatting
+"
+post;yixuan_spectra;a88e4ddcffa1684e6145593479060fc5204826c2;Yixuan Qiu <yixuanq@gmail.com>;1519230313;"documentation update
+"
+post;yixuan_spectra;5165993e62794a4a34185a91899dec8eeff91f76;Yixuan Qiu <yixuanq@gmail.com>;1519231063;"changelog
+"
+post;yixuan_spectra;0303c834993b6572904bd2d22e7f7993f63d4391;Yixuan Qiu <yixuanq@gmail.com>;1519231575;"one more change to document
+"
